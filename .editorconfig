@@ -1,0 +1,16 @@
+### Editor Config for LaTeX Documents ###
+root = true
+
+### General ###
+[*]
+
+# Indentation and Spacing
+indent_size = 2
+indent_style = space
+
+# New line preferences
+end_of_line = crlf
+insert_final_newline = true
+
+# Other
+trim_trailing_whitespace = true

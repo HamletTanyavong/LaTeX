@@ -1,0 +1,122 @@
+\documentclass[10pt,letterpaper]{article}
+
+% Basic packages: AMS packages, physics package, and a package for more types of integrals.
+\usepackage{amsmath,amssymb,physics,esint}
+
+% Other packages.
+\usepackage{tensor,nicematrix,mathtools,import,authblk,chngcntr,fancyhdr,hyperref,titlesec,enumitem,showexpl,multirow,caption,fancyref,cuted,subcaption,listings}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[flushmargin]{footmisc}
+\usepackage[
+  autocite = footnote,
+  backend = biber,
+  style = phys,
+  biblabel = superscript,
+  pageranges = true,
+  sorting = none,
+  natbib = true,
+  isbn = true,
+  url = true,
+  defernumbers = true
+]{biblatex}
+\addbibresource{../../Bibliographies/common.bib}
+\addbibresource{../../Bibliographies/science.bib}
+\addbibresource{../../Bibliographies/template.bib}
+
+\import{../../Preambles}{preamble.tex}
+
+%%% PDF metadata.
+\hypersetup{
+  pdfauthor = {Author},
+  pdftitle = {Title},
+  pdfsubject = {Subject},
+  pdfkeywords = {keywordOne, keywordTwo, keywordThree}
+}
+
+\begin{document}
+
+\title{\textbf{Title}}
+\author[1]{Author}
+\affil[1]{University\authorcr Department\authorcr Address}
+\date{\fontsize{10}{10}\selectfont Year}
+
+\begin{titlepage}
+  \maketitle
+  \thispagestyle{empty}
+\end{titlepage}
+
+\fancyhead[C]{\nouppercase{\leftmark}}
+\rhead{Title}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\cfoot{\thepage}
+
+\section{Section Title}
+\setcounter{equation}{0}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque in dictum non consectetur a erat nam at. Faucibus et molestie ac feugiat sed lectus vestibulum. Donec enim diam vulputate ut. Accumsan in nisl nisi scelerisque. Vel risus commodo viverra maecenas. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Platea dictumst quisque sagittis purus sit amet volutpat. Eu mi bibendum neque egestas congue quisque egestas diam. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut.\autocite[Lorem ipsum...]{latex-template}
+
+\subsection{Subsection Title}
+
+Viverra orci sagittis eu volutpat odio facilisis. Ultrices mi tempus imperdiet nulla malesuada. Duis convallis convallis tellus id interdum. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Quam nulla porttitor massa id neque. Semper viverra nam libero justo laoreet sit amet cursus sit. Vitae et leo duis ut. Lectus urna duis convallis convallis tellus id interdum. Tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Eget mauris pharetra et ultrices. Pellentesque dignissim enim sit amet venenatis urna cursus eget. Eget nunc lobortis mattis aliquam faucibus purus in. Sit amet cursus sit amet dictum. Quisque non tellus orci ac auctor augue mauris augue neque. Lacus sed viverra tellus in hac habitasse. Quam quisque id diam vel quam. Neque egestas congue quisque egestas diam in arcu cursus. Morbi non arcu risus quis.\autocites[Lorem ipsum...][]{article-one}{article-two}
+
+\subsection{Subsection Title}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut faucibus pulvinar elementum integer enim neque volutpat. Nam libero justo laoreet sit. Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Purus sit amet volutpat consequat mauris nunc congue. At elementum eu facilisis sed odio morbi. Fusce id velit ut tortor pretium viverra suspendisse potenti. Sit amet volutpat consequat mauris nunc congue. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Dui id ornare arcu odio. Tellus id interdum velit laoreet. Commodo nulla facilisi nullam vehicula ipsum a arcu. Elit pellentesque habitant morbi tristique senectus et. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. In arcu cursus euismod quis viverra. Enim blandit volutpat maecenas volutpat blandit aliquam. Tristique magna sit amet purus gravida quis blandit turpis. Eget nullam non nisi est sit amet. Risus in hendrerit gravida rutrum quisque non tellus.\autocite[Lorem ipsum...][]{book-two}
+
+\section{Section Title}
+\setcounter{equation}{0}
+
+\subsection{Subsection Title}
+
+``Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dignissim sodales ut eu sem integer vitae justo eget magna. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Facilisis gravida neque convallis a. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Imperdiet nulla malesuada pellentesque elit. Velit laoreet id donec ultrices tincidunt. Ac odio tempor orci dapibus ultrices in. Cursus turpis massa tincidunt dui.''\Autocite[1]{book-one}
+
+\section{Exercises}
+\setcounter{equation}{0}
+
+\subsection{Subsection Title}
+
+\begin{enumerate}
+  \item \textit{Question:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut diam quam nulla porttitor massa id neque aliquam. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Lorem mollis aliquam ut porttitor leo a. In nulla posuere sollicitudin aliquam ultrices sagittis. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Amet mauris commodo quis imperdiet massa tincidunt. Laoreet sit amet cursus sit amet dictum sit. Aliquet enim tortor at auctor urna nunc id cursus. Tristique risus nec feugiat in fermentum. Egestas diam in arcu cursus. Volutpat diam ut venenatis tellus in metus. Sed pulvinar proin gravida hendrerit lectus. At elementum eu facilisis sed odio morbi. Senectus et netus et malesuada fames ac turpis.
+
+  \bigskip\noindent\textit{Answer:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et ultrices neque ornare. Sit amet porttitor eget dolor morbi non arcu. Auctor neque vitae tempus quam pellentesque nec nam aliquam sem. Nec sagittis aliquam malesuada bibendum. Fermentum dui faucibus in ornare quam viverra orci sagittis. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget. Adipiscing enim eu turpis egestas pretium aenean pharetra. Risus feugiat in ante metus dictum at. Ultrices eros in cursus turpis massa tincidunt dui ut ornare. Nisl tincidunt eget nullam non. Morbi non arcu risus quis varius quam quisque id. Orci sagittis eu volutpat odio facilisis mauris.
+\end{enumerate}
+
+\section{Appendix A: Title}
+\setcounter{secnumdepth}{0}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In fermentum et sollicitudin ac. Pretium viverra suspendisse potenti nullam ac tortor vitae. Integer quis auctor elit sed. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. Sit amet mauris commodo quis imperdiet. Consequat ac felis donec et odio. Sit amet mattis vulputate enim nulla aliquet porttitor. Ipsum consequat nisl vel pretium lectus quam. Elementum sagittis vitae et leo duis ut diam quam nulla. Malesuada proin libero nunc consequat interdum varius.
+
+\section{References}
+\setcounter{secnumdepth}{0}
+
+% Add a phantom section to reestablish anchors for hyperref.
+\phantomsection
+\subsection{Book}
+
+\printbibliography[
+  heading = none,
+  type = book
+% Use this if we do not want bibliography subsections.
+% The title setting is ignored when heading = none.
+%	title = {\fontsize{10}{10}\selectfont Books}
+]
+
+\subsection{Article}
+
+\printbibliography[
+  heading = none,
+  type = article
+]
+
+\subsection{Online}
+
+\printbibliography[
+  heading = none,
+  type = online
+]
+
+\end{document}

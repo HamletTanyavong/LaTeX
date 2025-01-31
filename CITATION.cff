@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: 'If you use this software, please cite it as below.'
+title: LaTeX
+authors:
+- family-names: Tanyavong
+  given-names: Hamlet
+  orcid: 'https://orcid.org/0009-0002-0327-881X'
+type: generic
+version: 1.0.0
+license: MIT
+date-released: 2025-2-8
+repository-code: 'https://github.com/HamletTanyavong/LaTeX'
+keywords:
+- latex
+- template

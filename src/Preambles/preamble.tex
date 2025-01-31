@@ -1,0 +1,73 @@
+%%% Settings for the General Structure of the Document %%%
+
+\renewcommand*{\bibfont}{\fontsize{8}{9}\selectfont}
+
+\pagestyle{fancy}
+\lhead{Author}
+
+\renewcommand\Affilfont{\fontsize{8}{9}\selectfont}
+
+\counterwithin{equation}{section}
+\setlength{\parindent}{1pc}
+\linespread{1}
+
+%\renewcommand{\thefootnote}{\roman{footnote}}
+
+% Custom sections and subsections.
+\titleformat{\section}[frame]{\fontsize{12}{12}\selectfont\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}[hang]{\fontsize{10}{10}\selectfont\bfseries\itshape}{\thesubsection}{1em}{}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\setcounter{secnumdepth}{2}
+
+% Enumerate margin adjustments.
+\setlist[enumerate]{
+  nosep,
+  listparindent = 1pc,
+  leftmargin = 0pt
+}
+
+% Set font=bfseries for bold labels.
+%\setlist[enumerate, 2]{
+%	align = left,
+%	leftmargin = *
+%}
+
+% Paragraph margin adjustment.
+\def\changemargin#1#2{\list{}{
+    \rightmargin#2
+    \leftmargin#1
+  }
+  \item[]
+}
+\let\endchangemargin=\endlist
+
+% Matrices.
+\setcounter{MaxMatrixCols}{32}
+\renewcommand{\arraystretch}{1.2}
+
+% Listing setup.
+\lstset{
+  language = Python,
+  basicstyle = \fontfamily{pcr}\selectfont,
+  tabsize = 4,
+  breaklines = true,
+  showstringspaces = false,
+  frame = l,
+  numbers = left,
+  keywordstyle = \color{blue},
+  identifierstyle = \color{black},
+  commentstyle = \color{gray},
+  escapechar = ~,
+  escapeinside = {@*}{*@}
+}
+
+% Hyperlink setup; use the hyperref package.
+\hypersetup{
+  colorlinks,
+  linkcolor = blue,
+  urlcolor = blue,
+  citecolor = blue
+}
+
+% Fixes kerning for d'Alembertian operators.
+\newcommand{\da}{\Box\,}
