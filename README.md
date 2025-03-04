@@ -22,6 +22,7 @@ First, make sure you have a LaTeX distribution such as [TeX Live](https://www.tu
 Templates are located in the templates folder. You may choose to delete any you do not need as they are independent of each other.
 
 - Notes: This is a general-purpose template, mainly used for taking notes or completing assignments.
+- Article: This is a template for writing articles. It has two columns and has figures that can span both of those columns.
 
 ### Customization
 
