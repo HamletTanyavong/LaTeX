@@ -72,13 +72,46 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque in dictum non consectetur a erat nam at. Faucibus et molestie ac feugiat sed lectus vestibulum. Donec enim diam vulputate ut. Accumsan in nisl nisi scelerisque. Vel risus commodo viverra maecenas. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Platea dictumst quisque sagittis purus sit amet volutpat. Eu mi bibendum neque egestas congue quisque egestas diam. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut.\autocite[Lorem ipsum...]{latex-template}
 
+A sample equation:
+
+\begin{align}
+  \oint_\gamma f(z)\dd{z} = 2\pi i\sum\text{Res}(f, a_k)
+\end{align}
+% // To remove indents after equations, use a % symbol after the line break or simply remove the empty line.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 \subsection{Subsection Title}
 
 Viverra orci sagittis eu volutpat odio facilisis. Ultrices mi tempus imperdiet nulla malesuada. Duis convallis convallis tellus id interdum. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Quam nulla porttitor massa id neque. Semper viverra nam libero justo laoreet sit amet cursus sit. Vitae et leo duis ut. Lectus urna duis convallis convallis tellus id interdum. Tortor id aliquet lectus proin. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Eget mauris pharetra et ultrices. Pellentesque dignissim enim sit amet venenatis urna cursus eget. Eget nunc lobortis mattis aliquam faucibus purus in. Sit amet cursus sit amet dictum. Quisque non tellus orci ac auctor augue mauris augue neque. Lacus sed viverra tellus in hac habitasse. Quam quisque id diam vel quam. Neque egestas congue quisque egestas diam in arcu cursus. Morbi non arcu risus quis.\autocites[Lorem ipsum...][]{article-one}{article-two}
 
+A simple multiline equation with shared numbering:
+
+\begin{align}
+  \begin{split}
+    F &= ma \\
+    &= m\dv{v}{t} \\
+  \end{split}
+\end{align}
+
 \subsection{Subsection Title}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut faucibus pulvinar elementum integer enim neque volutpat. Nam libero justo laoreet sit. Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Purus sit amet volutpat consequat mauris nunc congue. At elementum eu facilisis sed odio morbi. Fusce id velit ut tortor pretium viverra suspendisse potenti. Sit amet volutpat consequat mauris nunc congue. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Dui id ornare arcu odio. Tellus id interdum velit laoreet. Commodo nulla facilisi nullam vehicula ipsum a arcu. Elit pellentesque habitant morbi tristique senectus et. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. In arcu cursus euismod quis viverra. Enim blandit volutpat maecenas volutpat blandit aliquam. Tristique magna sit amet purus gravida quis blandit turpis. Eget nullam non nisi est sit amet. Risus in hendrerit gravida rutrum quisque non tellus.\autocite[Lorem ipsum...][]{book-two}
+
+A simple table:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|l|c|c|c|}
+    \cline{2-4}
+    \multicolumn{1}{l|}{} & $ a $ & $ b $ & $ c $ \\
+    \hline
+    $ \alpha $ & 1 & 2 & 3 \\
+    $ \beta $  & 4 & 5 & 6 \\
+    $ \gamma $ & 7 & 8 & 9 \\
+    \hline
+  \end{tabular}
+  \caption{A simple table.}
+\end{table}
 
 \section{Section Title}
 \setcounter{equation}{0}
@@ -86,6 +119,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \subsection{Subsection Title}
 
 ``Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dignissim sodales ut eu sem integer vitae justo eget magna. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Facilisis gravida neque convallis a. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Imperdiet nulla malesuada pellentesque elit. Velit laoreet id donec ultrices tincidunt. Ac odio tempor orci dapibus ultrices in. Cursus turpis massa tincidunt dui.''\Autocite[1]{book-one}
+
+A subequation example:
+
+\begin{subequations}
+  \begin{align}
+    F &= ma \\
+    F_c &= ma_c = m\frac{v^2}{r}
+  \end{align}
+\end{subequations}
 
 \section{Exercises}
 \setcounter{equation}{0}
