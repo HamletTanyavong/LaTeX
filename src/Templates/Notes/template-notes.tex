@@ -37,7 +37,7 @@
 }
 
 % Custom sections and subsections.
-\titleformat{\section}[frame]{\fontsize{12}{12}\selectfont\bfseries}{\thesection}{1em}{}
+\titleformat{\section}[hang]{\fontsize{12}{12}\selectfont\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}[hang]{\fontsize{10}{10}\selectfont\bfseries\itshape}{\thesubsection}{1em}{}
 \renewcommand{\thesubsection}{\Alph{subsection}}
 \setcounter{secnumdepth}{2}
@@ -98,38 +98,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   \bigskip\noindent\textit{Answer:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et ultrices neque ornare. Sit amet porttitor eget dolor morbi non arcu. Auctor neque vitae tempus quam pellentesque nec nam aliquam sem. Nec sagittis aliquam malesuada bibendum. Fermentum dui faucibus in ornare quam viverra orci sagittis. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget. Adipiscing enim eu turpis egestas pretium aenean pharetra. Risus feugiat in ante metus dictum at. Ultrices eros in cursus turpis massa tincidunt dui ut ornare. Nisl tincidunt eget nullam non. Morbi non arcu risus quis varius quam quisque id. Orci sagittis eu volutpat odio facilisis mauris.
 \end{enumerate}
 
-\section{Appendix A: Title}
-\setcounter{secnumdepth}{0}
+\stepcounter{section}
+\setcounter{equation}{0}
+
+\section*{Appendix A: Title}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In fermentum et sollicitudin ac. Pretium viverra suspendisse potenti nullam ac tortor vitae. Integer quis auctor elit sed. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. Sit amet mauris commodo quis imperdiet. Consequat ac felis donec et odio. Sit amet mattis vulputate enim nulla aliquet porttitor. Ipsum consequat nisl vel pretium lectus quam. Elementum sagittis vitae et leo duis ut diam quam nulla. Malesuada proin libero nunc consequat interdum varius.
 
-\section{References}
-\setcounter{secnumdepth}{0}
-
-% Add a phantom section to reestablish anchors for hyperref.
-\phantomsection
-\subsection{Book}
+\stepcounter{section}
+\setcounter{equation}{0}
 
 \printbibliography[
-  heading = none,
-  type = book
-% Use this if we do not want bibliography subsections.
-% The title setting is ignored when heading = none.
-%	title = {\fontsize{10}{10}\selectfont Books}
-]
-
-\subsection{Article}
-
-\printbibliography[
-  heading = none,
-  type = article
-]
-
-\subsection{Online}
-
-\printbibliography[
-  heading = none,
-  type = online
+  % Use the following line to include section numbering in the bibliography header,
+  % but make sure the \stepcounter{section} lines above are commented out as well.
+  % heading = bibnumbered
 ]
 
 \end{document}
