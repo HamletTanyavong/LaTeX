@@ -11,6 +11,10 @@
 \setlength{\parindent}{1pc}
 \linespread{1}
 
+% Itemize.
+\let\defaultitemize\itemize
+\renewcommand{\itemize}{\defaultitemize\itemsep0pt}
+
 %\renewcommand{\thefootnote}{\roman{footnote}}
 
 % Set font=bfseries for bold labels.
