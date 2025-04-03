@@ -1,0 +1,13 @@
+% Default Table of Contents
+
+% These settings make minor changes to the default table of contents.
+% Only the spacing between the subsection and subsubsection titles and their labels are changed.
+
+% The default spacing for the section title and its label is 1.5em.
+
+\setcounter{tocdepth}{3}
+
+\makeatletter
+\renewcommand*\l@subsection{\@dottedtocline{2}{1.5em}{1.5em}}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{1.5em}}
+\makeatother
