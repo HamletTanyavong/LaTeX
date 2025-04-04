@@ -36,6 +36,9 @@
 \import{\templates/Environments}{mathematics.tex}
 \import{\templates/Commands}{mathematics.tex}
 
+% Package configurations.
+\import{\templates/PackageConfigs/enumitem}{full-width.tex}
+
 %%% PDF metadata.
 \hypersetup{
   pdfauthor = {Author},
@@ -49,13 +52,6 @@
 \titleformat{\subsection}[hang]{\fontsize{10}{10}\selectfont\bfseries\itshape}{\thesubsection}{1em}{}
 \renewcommand{\thesubsection}{\Alph{subsection}}
 \setcounter{secnumdepth}{2}
-
-% Enumerate margin adjustments.
-\setlist[enumerate]{
-  nosep,
-  listparindent = 1pc,
-  leftmargin = 1pc
-}
 
 \begin{document}
 
