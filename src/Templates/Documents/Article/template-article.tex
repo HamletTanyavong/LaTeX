@@ -22,14 +22,19 @@
   url = true,
   defernumbers = true
 ]{biblatex}
-\addbibresource{../../Bibliographies/common.bib}
-\addbibresource{../../Bibliographies/science.bib}
-\addbibresource{../../Bibliographies/template.bib}
 
-\import{../../Preambles}{default.tex}
-\import{../../TablesOfContents}{default.tex}
-\import{../../Environments}{mathematics.tex}
-\import{../../Commands}{mathematics.tex}
+\newcommand{\templates}{../../}
+
+% Bibliographies.
+\addbibresource{\templates/Bibliographies/common.bib}
+\addbibresource{\templates/Bibliographies/science.bib}
+\addbibresource{\templates/Bibliographies/template.bib}
+
+% Basic configurations.
+\import{\templates/Preambles}{default.tex}
+\import{\templates/TablesOfContents}{default.tex}
+\import{\templates/Environments}{mathematics.tex}
+\import{\templates/Commands}{mathematics.tex}
 
 %%% PDF metadata.
 \hypersetup{
