@@ -15,14 +15,6 @@
 \let\defaultitemize\itemize
 \renewcommand{\itemize}{\defaultitemize\itemsep0pt}
 
-%\renewcommand{\thefootnote}{\roman{footnote}}
-
-% Set font=bfseries for bold labels.
-%\setlist[enumerate, 2]{
-%	align = left,
-%	leftmargin = *
-%}
-
 % Paragraph margin adjustment.
 \def\changemargin#1#2{\list{}{
     \rightmargin#2
@@ -35,21 +27,5 @@
 % Matrices.
 \setcounter{MaxMatrixCols}{32}
 \renewcommand{\arraystretch}{1.2}
-
-% Listing setup.
-\lstset{
-  language = Python,
-  basicstyle = \fontfamily{pcr}\selectfont,
-  tabsize = 4,
-  breaklines = true,
-  showstringspaces = false,
-  frame = l,
-  numbers = left,
-  keywordstyle = \color{blue},
-  identifierstyle = \color{black},
-  commentstyle = \color{gray},
-  escapechar = ~,
-  escapeinside = {@*}{*@}
-}
 
 \import{../PackageConfigs/hyperref}{blue.tex}
