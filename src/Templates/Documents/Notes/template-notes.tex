@@ -4,7 +4,7 @@
 \usepackage{amsmath,amssymb,physics,esint}
 
 % Other packages.
-\usepackage{tensor,nicematrix,mathtools,import,authblk,chngcntr,fancyhdr,hyperref,titlesec,enumitem,showexpl,multirow,caption,fancyref,cuted,subcaption,listings}
+\usepackage{tensor,nicematrix,mathtools,import,authblk,chngcntr,fancyhdr,hyperref,titlesec,enumitem,showexpl,multirow,fancyref,cuted,subcaption,listings}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[letterpaper,margin=1in]{geometry}
@@ -22,14 +22,22 @@
   url = true,
   defernumbers = true
 ]{biblatex}
-\addbibresource{../../Bibliographies/common.bib}
-\addbibresource{../../Bibliographies/science.bib}
-\addbibresource{../../Bibliographies/template.bib}
 
-\import{../../Preambles}{default.tex}
-\import{../../TablesOfContents}{default.tex}
-\import{../../Environments}{mathematics.tex}
-\import{../../Commands}{mathematics.tex}
+\newcommand{\templates}{../../}
+
+% Bibliographies.
+\addbibresource{\templates/Bibliographies/common.bib}
+\addbibresource{\templates/Bibliographies/science.bib}
+\addbibresource{\templates/Bibliographies/template.bib}
+
+% Basic configurations.
+\import{\templates/Preambles}{default.tex}
+\import{\templates/TablesOfContents}{default.tex}
+\import{\templates/Environments}{mathematics.tex}
+\import{\templates/Commands}{mathematics.tex}
+
+% Package configurations.
+\import{\templates/PackageConfigs/enumitem}{hanging-labels.tex}
 
 %%% PDF metadata.
 \hypersetup{
@@ -44,13 +52,6 @@
 \titleformat{\subsection}[hang]{\fontsize{10}{10}\selectfont\bfseries\itshape}{\thesubsection}{1em}{}
 \renewcommand{\thesubsection}{\Alph{subsection}}
 \setcounter{secnumdepth}{2}
-
-% Enumerate margin adjustments.
-\setlist[enumerate]{
-  nosep,
-  listparindent = 1pc,
-  leftmargin = 0pt
-}
 
 \begin{document}
 
